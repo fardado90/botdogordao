@@ -15,7 +15,7 @@ client.on('message', message => {
   	}
 });
 
-let scheduledMessage = new cron.CronJob('15 33 19 * * *', () => {
+let scheduledMessage = new cron.CronJob('15 33 20 * * *', () => {
   // This runs every day at 10:30:00, you can do anything you want
     		var num = Math.floor(Math.random() * 999);
 	  	message.channel.send(' @everyone Radio do dia: '+num);
