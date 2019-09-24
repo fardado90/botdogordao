@@ -11,7 +11,7 @@ client.on('message', message => {
 	  	var d = new Date();
 		var n = d.getHours();
 	   	message.channel.send(' @everyone Radio do dia: '+num);
-	    	message.channel.send(n);
+	    	message.channel.send(n-3);
   	}
 });
 
