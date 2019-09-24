@@ -8,7 +8,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === '!radio') {
     		var num = Math.floor(Math.random() * 999);
-	   	message.channel.send('Radio do dia: '+num);
+	   	message.channel.send(' @everyone Radio do dia: '+num);
   	}
 });
 
