@@ -15,7 +15,8 @@ client.on('message', message => {
 });
 
 setTimeout(() => {
-  console.log('Alligator!!!!');
+  var num = Math.floor(Math.random() * 999);
+  message.channel.send('Radio do dia: '+num);
 }, 1000);
 
 
