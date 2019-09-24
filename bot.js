@@ -7,7 +7,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-let scheduledMessage = new cron.CronJob('15 43 20 * * *', () => {
+let scheduledMessage = new cron.CronJob('15 44 20 * * *', () => {
   // This runs every day at 10:30:00, you can do anything you want
   let channel = yourGuild.channels.get('449300184422154282');
   channel.send('You message');
