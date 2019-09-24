@@ -9,9 +9,10 @@ client.on('message', message => {
     if (message.content === '!radio') {
     		var num = Math.floor(Math.random() * 999);
 	  	var d = new Date();
-		var n = d.getHours();
+		var h = d.getHours();
+	    	var m = d.getMinutes();
 	   	message.channel.send(' @everyone Radio do dia: '+num);
-	    	message.channel.send(n-3);
+	    	message.channel.send(h-3+':'+m);
   	}
 });
 
