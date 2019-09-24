@@ -1,20 +1,29 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+var cron = require("cron");
 
 client.on('ready', () => {
     console.log('I am ready!');
 });
 
 client.on('message', message => {
+	
     if (message.content === '!radio') {
     		var num = Math.floor(Math.random() * 999);
-	  	var d = new Date();
-		var h = d.getHours();
-	    	var m = d.getMinutes();
-	   	message.channel.send(' @everyone Radio do dia: '+num);
-	    	message.channel.send(h-3+':'+m);
+	  	message.channel.send(' @everyone Radio do dia: '+num);
+	    	
   	}
 });
+
+let scheduledMessage = new cron.CronJob('00 28 20 * * *', () => {
+  // This runs every day at 10:30:00, you can do anything you want
+  let channel = yourGuild.channels.get('id');
+  channel.send('You message');
+});
+
+// When you want to start it, use:
+scheduledMessage.start()
+// You could also make a command to pause and resume the job
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
