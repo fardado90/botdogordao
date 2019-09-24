@@ -14,6 +14,10 @@ client.on('message', message => {
   	}
 });
 
+setTimeout(() => {
+  console.log('Alligator!!!!');
+}, 1000);
+
 
 
 // THIS  MUST  BE  THIS  WAY
