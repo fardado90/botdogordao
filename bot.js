@@ -14,12 +14,5 @@ client.on('message', message => {
   	}
 });
 
-setTimeout(() => {
-  var num = Math.floor(Math.random() * 999);
-  message.channel.send('Radio do dia: '+num);
-}, 1000);
-
-
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
