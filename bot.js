@@ -1,5 +1,5 @@
 var Eris = require('eris');
-var bot = new Eris("NjI2MTcyMzM2ODY0NzU1NzEy.XYqV0Q.KGoFTq7qu8av6A3eO8kTs1XW6_4");
+var bot = new Eris("NjI2MTcyMzM2ODY0NzU1NzEy.XYqRHg.Vus-wbFD440TLUhdaf24_h4k02g");
 
 bot.on("ready", () =>{
 	console.log("Estou Vivo!");
@@ -14,4 +14,4 @@ bot.on("messageCreate", (msg)=>{
 
 });
 
-bot.connect();
+bot.login(process.env.BOT_TOKEN);
