@@ -15,10 +15,10 @@ client.on('message', message => {
   	}
 });
 
-let scheduledMessage = new cron.CronJob('00 28 20 * * *', () => {
+let scheduledMessage = new cron.CronJob('00 30 20 * * *', () => {
   // This runs every day at 10:30:00, you can do anything you want
-  let channel = yourGuild.channels.get('id');
-  channel.send('You message');
+    		var num = Math.floor(Math.random() * 999);
+	  	message.channel.send(' @everyone Radio do dia: '+num);
 });
 
 // When you want to start it, use:
