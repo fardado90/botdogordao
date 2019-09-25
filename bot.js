@@ -14,10 +14,10 @@ client.on('message', message => {
   	}
 	if (message.content === '!vazo') {
     		var num = Math.floor(Math.random() * 999);
-	  	message.channel.send(' @everyone Vazo ip nova rádio: '+num);
-		message.channel.send(' @everyone Vazo ip nova rádio: '+num);
-		message.channel.send(' @everyone Vazo ip nova rádio: '+num);
-		message.channel.send(' @everyone Vazo ip nova rádio: '+num);
+	  	message.channel.send(' @everyone Vazo ip!!! nova rádio: '+num);
+		message.channel.send(' @everyone Vazo ip!!! nova rádio: '+num);
+		message.channel.send(' @everyone Vazo ip!!! nova rádio: '+num);
+		message.channel.send(' @everyone Vazo ip!!! nova rádio: '+num);
 	    	
   	}
 });
