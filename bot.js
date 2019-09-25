@@ -12,6 +12,14 @@ client.on('message', message => {
 	  	message.channel.send(' @everyone Radio do dia: '+num);
 	    	
   	}
+	if (message.content === '!vazo') {
+    		var num = Math.floor(Math.random() * 999);
+	  	message.channel.send(' @everyone Vazo ip nova rádio: '+num);
+		message.channel.send(' @everyone Vazo ip nova rádio: '+num);
+		message.channel.send(' @everyone Vazo ip nova rádio: '+num);
+		message.channel.send(' @everyone Vazo ip nova rádio: '+num);
+	    	
+  	}
 });
 
 // THIS  MUST  BE  THIS  WAY
