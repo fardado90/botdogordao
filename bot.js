@@ -20,6 +20,9 @@ client.on('message', message => {
 		message.channel.send(' @everyone Vazo ip!!! nova rádio: '+num);
 	    	
   	}
+	if (message.content === '!corno') {
+    		message.channel.send('pedro é corno');
+  	}
 });
 
 // THIS  MUST  BE  THIS  WAY
