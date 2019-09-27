@@ -22,6 +22,9 @@ client.on('message', message => {
   	}
 	if (message.content === '!corno') {
     		message.channel.send('pedro é corno');
+		message.channel.send('pedro é corno');
+		message.channel.send('pedro é corno');
+		message.channel.send('pedro é corno');
   	}
 });
 
