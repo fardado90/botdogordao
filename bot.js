@@ -20,6 +20,11 @@ client.on('message', message => {
 		message.channel.send(' @everyone Vazo ip!!! nova rádio: '+num);
 	    	
   	}
+	if (message.content === '!acao') {
+    		var num = Math.floor(Math.random() * 999);
+	  	message.channel.send(' Radio temporaria para ação: '+num);
+	    	
+  	}
 });
 
 // THIS  MUST  BE  THIS  WAY
