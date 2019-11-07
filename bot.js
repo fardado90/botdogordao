@@ -5,7 +5,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-var temas = 'Segunda - animação \nTest'
+var temas = 'Segunda - animação \nTerça - clipes.\nQuarta - Stop.\nQuinta - comida.\n Sexta - ?.\nSábado - programas antigos.\nDomingo - livre.';
 
 client.on('message', message => {
 	
@@ -14,19 +14,7 @@ client.on('message', message => {
 	    message.channel.send(temas);
 	    	
   	}
-	if (message.content === '!vazo') {
-    		var num = Math.floor(Math.random() * 999);
-	  	message.channel.send(' @everyone Vazo ip!!! nova rádio: '+num);
-		message.channel.send(' @everyone Vazo ip!!! nova rádio: '+num);
-		message.channel.send(' @everyone Vazo ip!!! nova rádio: '+num);
-		message.channel.send(' @everyone Vazo ip!!! nova rádio: '+num);
-	    	
-  	}
-	if (message.content === '!acao') {
-    		var num = Math.floor(Math.random() * 999);
-	  	message.channel.send(' Radio temporaria para ação: '+num);
-	    	
-  	}
+
 });
 
 
