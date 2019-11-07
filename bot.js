@@ -15,6 +15,11 @@ client.on('message', message => {
 	    	
   	}
 
+	 if (message.content === '!bot') {
+	   
+	    message.channel.send('Eu sou foda o resto é moda.');
+	    	
+  	}
 });
 
 
