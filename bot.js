@@ -5,7 +5,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-var temas = 'Segunda - animação.\nTerça - clipes.\nQuarta - Stop.\nQuinta - comida.\n Sexta - ?.\nSábado - programas antigos.\nDomingo - livre.';
+var temas = 'Segunda - animação.\nTerça - clipes.\nQuarta - comida.\nQuinta - stop.\n Sexta - minicrifti com sr.\nSábado - programas antigos.\nDomingo - livre.';
 
 client.on('message', message => {
 	
