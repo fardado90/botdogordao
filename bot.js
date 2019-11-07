@@ -5,11 +5,13 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+var temas = 'Segunda - animação \nTest'
+
 client.on('message', message => {
 	
-    if (message.content === '!radio') {
-    		var num = Math.floor(Math.random() * 999);
-	  	message.channel.send(' @everyone Radio do dia: '+num);
+    if (message.content === '!temas') {
+	   
+	    
 	    	
   	}
 	if (message.content === '!vazo') {
@@ -26,6 +28,8 @@ client.on('message', message => {
 	    	
   	}
 });
+
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
