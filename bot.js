@@ -11,7 +11,7 @@ client.on('message', message => {
 	
     if (message.content === '!temas') {
 	   
-	    
+	    message.channel.send(temas);
 	    	
   	}
 	if (message.content === '!vazo') {
